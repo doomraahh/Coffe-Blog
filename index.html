@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Coffee blog</h1>
+    <form action="" method="post">     
+        <table>       
+            <tr>
+                <td class="label" name="title">Название напитка</td>
+                <td><input type="text" name="title" placeholder="Американо" required></td>
+            </tr> 
+            <tr>
+                <td class="label">Сорт кофе</td>
+                <td><select name="sort" value="sort">
+                    <option>Гватемала</option>
+                    <option>Бурбон</option>
+                    <option>Коста-Рика</option>
+                    <option>Арабика</option>
+                    <option>Робуста</option>
+                    <option>Либерика</option>
+                    <option>-</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="label">Крепкость кофе</td>
+                <td><input type="radio" name="strong" value="strong" required>  Крепкая<br>
+                <input type="radio" name="strong" value="strong" required> Средняя<br>
+                <input type="radio" name="strong" value="strong" required> Легкая
+            </td>
+            </tr>
+            <tr>
+                <td class="label">Изображение</td>
+                <td><input type="text" name="imagee" placeholder="Ссылка" required></td>                
+            </tr>
+            <tr>
+                <td class="label">Стоимость напитка</td>
+                <td><input type="text" name="churka" required></td>
+            </tr>
+            <tr>
+                <td class="label">Описание</td>
+                <td><textarea name="tochik" rows="5" cols="20" required></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" id="submit">Добавить напиток</button></td>
+            </tr>
+            
+        </table>  
+       
+    </form>
+
+    <br>
+
+
+    <table id="tablee">
+        <tr>
+            <td class="down">Изображение</td>
+            <td class="down">Название</td>
+            <td class="down">Сорт кофе</td>
+            <td class="down">Крепкость</td>
+            <td class="down">Стоимость</td>
+            <td class="down">Описание</td>
+        </tr>
+        
+        
+    </table>
+    <script src="scripts.js"></script>
+</body>
+    
+</html>
